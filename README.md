@@ -29,7 +29,7 @@
 ![howToRecord](img/howToRecord.gif)
 
 下図はMATLAB Driveに格納されているデータで、さきほど記録したデータがあることがわかります。
-![matlabDrive.png](img/matlabDrive.png)
+![matlabDrive.png](img/matlabDrive.PNG)
 
 # センサーデータをCSV形式で保存する
 次に、さきほどのGPSのデータをcsv形式で保存をします。現在はMATLABで扱うことのできる mat形式 になっているため、その後のpythonの処理では直接的に扱うことはできません。そこで、以下のコードをコピーし、そのままMATLAB Mobileのコマンドウィンドウで実行してください。MobileSensorDataというフォルダの中にある、sensorlog_何々というデータをすべてCSV形式で保存します。このgithubページではこれを実行後のCSVファイルがあるため、それらを用いて以下のpythonコードを試していただくことも可能です。
@@ -84,10 +84,10 @@ m = folium.Map(location=[35.7056232, 139.751919], # 中心の設定：今回は�
 m # 作成したベースマップを表示
 ```
 
-![fig_1.png](img/img1.png)
+![fig_1.PNG](img/img1.PNG)
 
 jupyter notebookでは上のマップを表示するためにFile -> trust notebookをクリックしました  
-![fig_1.png](img/img2.png)
+![fig_1.PNG](img/img2.PNG)
 
 ## 23区の境界などを格納した情報を読み込み  
 読み込みに関しては、`open(r'tokyo23.json) -> json.load(f)`の流れで読み込めるらしいのですが、私の環境ではエラーが出てしまったため以下のように読み込みました。そして、私の環境では、データフレームに変換して後のグラデーションの表示（Choropleth図）がうまくいったので  
@@ -181,7 +181,7 @@ folium.LayerControl().add_to(m) # ベースマップmにchoroplethの設定を�
 m
 ```
 
-![fig_1.png](img/img3.png)
+![fig_1.PNG](img/img3.PNG)
 
 このように23区の人口の多さをグラデーションで示すことができました。次は前半のMATLAB Mobileによりスマートフォンから取得したGPSデータをプロットしていきます。
 
@@ -207,7 +207,7 @@ line = folium.vector_layers.PolyLine(
 m.add_child(line)
 ```
 
-![fig_1.png](img/img4.png)
+![fig_1.PNG](img/img4.PNG)
 
 ## 始点と終点をアイコンで表示  
 GPSデータの最初と最後の座標を取得し、folium.Marker関数でアイコンを表示します
