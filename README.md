@@ -29,7 +29,7 @@
 ![howToRecord](img/howToRecord.gif)
 
 下図はMATLAB Driveに格納されているデータで、さきほど記録したデータがあることがわかります。
-![matlabDrive.PNG](img/matlabDrive.PNG)
+![matlabDrive.png](img/matlabDrive.png)
 
 # センサーデータをCSV形式で保存する
 次に、さきほどのGPSのデータをcsv形式で保存をします。現在はMATLABで扱うことのできる mat形式 になっているため、その後のpythonの処理では直接的に扱うことはできません。そこで、以下のコードをコピーし、そのままMATLAB Mobileのコマンドウィンドウで実行してください。MobileSensorDataというフォルダの中にある、sensorlog_何々というデータをすべてCSV形式で保存します。このgithubページではこれを実行後のCSVファイルがあるため、それらを用いて以下のpythonコードを試していただくことも可能です。
