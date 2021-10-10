@@ -46,7 +46,8 @@ T = array2table(latlon);
 T.Properties.VariableNames(1:2) = {'Latitude','Longitude'};
 writetable(T,'latlon.csv')
 ```  
-実際にMatlab Mobileで上のコードを実行している様子。
+実際にMatlab Mobileで上のコードを実行している様子。  
+<br>
 ![saveCSV](img/saveCSV.gif)
 <br>
 次に、pythonでCSV形式に保存したGPSのデータを地図上にマッピングすることを行います。foliumやgeopandasというライブラリをインストールしてください。  
