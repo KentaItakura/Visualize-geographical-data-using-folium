@@ -1,4 +1,4 @@
-# Mobile(無料枠)とPythonライブラリ folium によるGPSデータのプロット   
+# MATLAB Mobile(無料枠)とPythonライブラリ folium によるGPSデータのプロット   
 このスクリプトではMATLAB Mobileの無料枠の機能を利用して、MATLAB Mobileをiphoneにインストールした後、それを持って移動したときのGPSによる位置情報を地図上にプロットするということを行います。地図へのプロットはpythonを用いて行います。移動中のスマートフォンのGPSデータを一定時間ごとに保存し、その軌跡を地図上にマッピングすることを行います。今回は都内を自動車で移動したときのGPS情報を描き、さらに23区の人口を色のグラデーションで示してみます。
 # 最終出力のイメージ
 ![demo.gif](img/demo.gif)
@@ -235,7 +235,8 @@ MATLAB Mobileを用いてGPSデータを取得し、MATLAB Online（無料の機
 機会があればまた別のプロットの種類も試してみたいと思います。 
 
 ## 謝辞  
-この文書のMATLABの欄はlivescript2markdownというMATLAB関数を使っていてMATLABのエディター（ライブスクリプト）からマークダウンファイルに一発で変換でき便利でした。作成者の[Pavel Roslovets](https://jp.mathworks.com/matlabcentral/fileexchange/89516-live-script-to-markdown-converter?s_tid=srchtitle)さま、[inoue](https://jp.mathworks.com/matlabcentral/fileexchange/73993-livescript2markdown-matlab-s-live-scripts-to-markdown?s_tid=srchtitle)さまに感謝いたします。
+- [こちら](https://github.com/niiyz/JapanCityGeoJson/tree/master/geojson/custom)の東京のGEOJSONのファイルが非常に役立ちました。作成者様、ありがとうございました。  
+- この文書のMATLABの欄はlivescript2markdownというMATLAB関数を使っていてMATLABのエディター（ライブスクリプト）からマークダウンファイルに一発で変換でき便利でした。作成者の[Pavel Roslovets](https://jp.mathworks.com/matlabcentral/fileexchange/89516-live-script-to-markdown-converter?s_tid=srchtitle)さま、[inoue](https://jp.mathworks.com/matlabcentral/fileexchange/73993-livescript2markdown-matlab-s-live-scripts-to-markdown?s_tid=srchtitle)さまに感謝いたします。
 
 ## 参考にさせていただいたサイト
 
